@@ -1,17 +1,23 @@
 body {
     font: normal 14px Arial, Helvetica, sans-serif; 
     line-height: 1.5;
-    background-color: #696969;
+    background-color: #3a3a3a;
+    color: #fff
 
 }
 h1, h2, h3, h4{
     font-weight: bold;
 }
-/*working on it*/
-a:visited{
-    color: #fff;
+h3 {
+    font-size: 24px;
 }
-a:hover{
-    background-color: aqua;
-    color: red;
+h4 {
+    font-size: 18px;
+}
+/*working on it*/
+#favs ol a{
+    color: #963a51;
+}
+#favs ol a:hover{
+    color: #dd5476;
 }
