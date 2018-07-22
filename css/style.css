@@ -1,3 +1,17 @@
-div {
-    border: 1px solid black;
+body {
+    font: normal 14px Arial, Helvetica, sans-serif; 
+    line-height: 1.5;
+    background-color: #696969;
+
+}
+h1, h2, h3, h4{
+    font-weight: bold;
+}
+/*working on it*/
+a:visited{
+    color: #fff;
+}
+a:hover{
+    background-color: aqua;
+    color: red;
 }
