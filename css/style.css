@@ -1,10 +1,31 @@
+/* Universal setting for the whole page*/
+* {
+    box-sizing: border-box;
+}
 body {
     font: normal 14px Arial, Helvetica, sans-serif; 
     line-height: 1.5;
     background-color: #3a3a3a;
-    color: #fff
-
+    color: #fff;
 }
+/*Page layout using column classes.  2 columns for view greater than 601px and 1 column for views less than 600*/
+.col-0 {
+    width: 30%;
+    height: 100%;
+}
+.col-1{
+    width: 70%;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+@media only screen and (max-width: 600px){
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+/* Formatting for headings, imgs and text*/
 h1, h2, h3, h4{
     font-weight: bold;
 }
@@ -14,10 +35,14 @@ h3 {
 h4 {
     font-size: 18px;
 }
+img {
+    max-width: 100%;
+    width: auto;
+}
 /*working on it*/
-#favs ol a{
+a {
     color: #963a51;
 }
-#favs ol a:hover{
+a:hover{
     color: #dd5476;
 }

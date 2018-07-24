@@ -4,46 +4,49 @@
     <meta charset="utf-8" />
     <meta name="description" content="Portfolio website made by Lachie for cosc260">
     <meta name="author" content="Lachie">
-    <meta name="keyword" content="Protfolio, student, Lachie">
+    <meta name="keyword" content="Protfolio, Student, Lachie">
+    <meta name="viewport" content="width=device-width">
     <title>Lachie's Portfolio Page</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- This will be the side panel column with navigation and what not-->
-    <div>
-        <p>
-            <img src="img/me.png" alt="profile picture" height="400" width="450"><br>
-            Lachlann Whitehill<br>
-            email: lwhiteh3@myune.edu.au
-        </p>
-    </div>
-    <!-- This will be the main content block-->
-    <div>
-        <article>
-            <h3>About me</h3>
+    <div id="container">
+        <!-- Left column (for views larger than 600px). conent: name, picture, contact info-->
+        <div class="col-0">
+            <h3>Lachlann Whitehill</h3>
             <p>
-                Stuff and things. I'm very interesting ect, ect...
+                <img src="img/me.png" alt="profile picture"><br>  <!-- drawn by Tile Salter(my partner), liecenced for perpetual use-->
+                email: <a href="mailto:lwhiteh3@myune.edu.au?Subject=Hello" target="_top">lwhiteh3@myune.edu.au</a>
             </p>
-            <h3>Education</h3>
-            <ul>
-                <li>High school</li>
-                <li>BA</li>
-                <li>MA</li>
-                <li>PhD</li>
-            </ul>
-            <h4>Some real cool websites</h4>
-            <p>
-                Here are my favourite websites in order!
-            </p>
-            <div id="favs">
-                <ol>
-                    <li><a href="https://devrant.com">devRant</a></li>
-                    <li><a href="https://w3schools.com">W3schools</a></li>
-                    <li>I know how to do links</li>
-                </ol>
-            </div>
-        </article>
-        <p>Some more stuff</p>
+        </div>
+        <!-- right column (for views larger then 600px). conent:  about me, education and favourite websites-->
+        <div class="col-1">
+            <article>
+                <h3>About me</h3>
+                <p>
+                    Stuff and things. I'm very interesting ect, ect...
+                </p>
+                <h3>Education</h3>
+                <ul>
+                    <li>High school</li>
+                    <li>BA</li>
+                    <li>MA</li>
+                    <li>PhD</li>
+                </ul>
+                <h4>Some real cool websites</h4>
+                <p>
+                    Here are my favourite websites in order!
+                </p>
+                <div id="favs">
+                    <ol>
+                        <li><a href="https://devrant.com">devRant</a></li>
+                        <li><a href="https://w3schools.com">W3schools</a></li>
+                        <li><a href="https://www.dndbeyond.com/">DnD Beyond</a></li>
+                        <li><a href="https://www.netflix.com/au/">Netflix</a></li>
+                    </ol>
+                </div>
+            </article>
+        </div>
     </div>
 </body>
 </html>
