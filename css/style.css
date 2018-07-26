@@ -9,7 +9,7 @@ html{
 body {
     font: normal 14px Arial, Helvetica, sans-serif; 
     line-height: 1.5;
-    background-color: #3a3a3a;
+    background-color: #252525;
     color: #fff;
     height: 100%;
 }
@@ -21,14 +21,14 @@ body {
     width: 30%;
     height: 100%;
     padding: 0 0 0 0;
-    background-color: #fff;
+    background-color: #454545;
 }
 .col-1{
     width: 70%;
 }
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 1%;
 }
 @media only screen and (max-width: 600px){
     [class*="col-"] {
@@ -40,10 +40,13 @@ h1, h2, h3, h4{
     font-weight: bold;
 }
 h3 {
-    font-size: 24px;
+    font-size: 2em;
 }
 h4 {
-    font-size: 18px;
+    font-size: 1.2em;
+}
+#favs h4 {
+    padding-top: 10%;
 }
 img {
     max-width: 100%;
