@@ -2,16 +2,26 @@
 * {
     box-sizing: border-box;
 }
+html{
+    height: 100%;
+    width: 100%
+}
 body {
     font: normal 14px Arial, Helvetica, sans-serif; 
     line-height: 1.5;
     background-color: #3a3a3a;
     color: #fff;
+    height: 100%;
 }
 /*Page layout using column classes.  2 columns for view greater than 601px and 1 column for views less than 600*/
+#container {
+    height: 100%;
+}
 .col-0 {
     width: 30%;
     height: 100%;
+    padding: 0 0 0 0;
+    background-color: #fff;
 }
 .col-1{
     width: 70%;
@@ -38,6 +48,9 @@ h4 {
 img {
     max-width: 100%;
     width: auto;
+}
+img:hover {
+    opacity: 0.5;
 }
 /*working on it*/
 a {
