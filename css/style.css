@@ -2,6 +2,12 @@
 * {
     box-sizing: border-box;
 }
+b {
+    font-weight: bold;
+}
+i {
+    font-style: italic;
+}
 html{
     height: 100%;
     width: 100%
@@ -39,17 +45,15 @@ body {
 h1, h2, h3, h4{
     font-weight: bold;
 }
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 2em;
+}
 h3 {
-    font-size: 2em;
-}
-h4 {
+    padding-top: 2.5%;
     font-size: 1.2em;
-}
-#education ul {
-    font-size: 2em;
-}
-#favs h4 {
-    padding-top: 10%;
 }
 img {
     max-width: 100%;
@@ -64,4 +68,13 @@ a {
 }
 a:hover{
     color: #dd5476;
+}
+ul {
+    text-indent: 2.5%;
+}
+ul li {
+    padding: 1% 1% 1% 1%;
+}
+ol {
+    text-indent: 2.5%;
 }
