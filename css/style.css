@@ -19,18 +19,22 @@ body {
     color: #fff;
     height: 100%;
 }
-/*Page layout using column classes.  2 columns for view greater than 601px and 1 column for views less than 600*/
-#container {
+#wrapper {
+    overflow: auto;
     height: 100%;
 }
+/*Page layout using column classes.  2 columns for view greater than 601px and 1 column for views less than 600*/
+
 .col-0 {
     width: 30%;
     height: 100%;
-    padding: 0 0 0 0;
+    padding: 0% 0% 0% 0%;
     background-color: #454545;
+    overflow: inherit;
 }
 .col-1{
     width: 70%;
+    overflow: inherit;
 }
 [class*="col-"] {
     float: left;
@@ -41,7 +45,7 @@ body {
         width: 100%;
     }
 }
-/* Formatting for headings, imgs and text*/
+/* Formatting for top level elements.  Maybe over written by id or class*/
 h1, h2, h3, h4{
     font-weight: bold;
 }
@@ -56,13 +60,13 @@ h3 {
     font-size: 1.2em;
 }
 img {
+    display: block;
     max-width: 100%;
     width: auto;
 }
 img:hover {
     opacity: 0.5;
 }
-
 a {
     color: #963a51;
 }
