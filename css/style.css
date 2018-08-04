@@ -28,7 +28,7 @@ body {
 
 .col-0 {
     width: 30%;
-    height: 95%;
+    height: 100%;
     padding: 0% 0% 0% 0%;
     background-color: #454545;
     overflow: inherit;
@@ -40,15 +40,6 @@ body {
 [class*="col-"] {
     float: left;
     padding: 1%;
-}
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 5%;
-    border-top: 1px solid whitesmoke;
-    text-align: center;
-    font-size: 12px;
 }
 /* Formatting for top level elements.  Maybe over written by id or class*/
 h1, h2, h3, h4{
@@ -87,14 +78,14 @@ ul li {
 ol {
     text-indent: 2.5%;
 }
+/*Set the screen width for mobile*/
 @media only screen and (max-width: 600px){
     [class*="col-"] {
         width: 100%;
         clear: both;
         overflow: hidden;
     }
-    #footer {
-        /* Should probaby fix this*/
-        display: none;
+    img {
+        float: left;
     }
 }
