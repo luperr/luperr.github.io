@@ -40,14 +40,6 @@ body {
     float: left;
     padding: 1%;
 }
-<<<<<<< HEAD
-=======
-@media only screen and (max-width: 600px){
-    [class*="col-"] {
-        width: 100%;
-    }
-}
->>>>>>> parent of 74f26c4... add a footer the the webpage.
 /* Formatting for top level elements.  Maybe over written by id or class*/
 h1, h2, h3, h4{
     font-weight: bold;
@@ -84,7 +76,6 @@ ul li {
 }
 ol {
     text-indent: 2.5%;
-<<<<<<< HEAD
 }
 /*Set the screen width for mobile*/
 @media only screen and (max-width: 600px){
@@ -96,6 +87,4 @@ ol {
     img {
         float: left;
     }
-=======
->>>>>>> parent of 74f26c4... add a footer the the webpage.
 }
