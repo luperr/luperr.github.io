@@ -1,4 +1,13 @@
 /* Universal setting for the whole page*/
+/*
+TODO:
+[] fix nav bar to top of page and reslting layour problems
+[] Create a proper header and footer styling
+[] add better styling a colour classing
+[] introduce JS
+[] set up for mobile first dev
+[] fix the stupid damn layout
+*/
 * {
     box-sizing: border-box;
 }
@@ -23,21 +32,34 @@ body {
     overflow: auto;
     height: 100%;
 }
-/*Page layout using column classes.  2 columns for view greater than 601px and 1 column for views less than 600*/
-
-.col-0 {
-    width: 30%;
-    height: 100%;
+/*The nav bar*/
+nav {
+    
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li{
+    border-right: #fff;
+    float: left;
+}
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li a{
+    text-align: center;
+    text-decoration: none;
+}
+/*Page layout using column classes*/
+.main {
     padding: 0% 0% 0% 0%;
     background-color: #454545;
     overflow: inherit;
-}
-.col-1{
-    width: 70%;
-    overflow: inherit;
-}
-[class*="col-"] {
     float: left;
+    clear: both;
     padding: 1%;
 }
 /* Formatting for top level elements.  Maybe over written by id or class*/
@@ -79,12 +101,5 @@ ol {
 }
 /*Set the screen width for mobile*/
 @media only screen and (max-width: 600px){
-    [class*="col-"] {
-        width: 100%;
-        clear: both;
-        overflow: hidden;
-    }
-    img {
-        float: left;
-    }
+   
 }
