@@ -34,13 +34,16 @@ body {
 }
 /*The nav bar*/
 nav {
-    
+    align: centre;
 }
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 nav ul li{
     border-right: #fff;
@@ -52,6 +55,11 @@ nav ul li:last-child {
 nav ul li a{
     text-align: center;
     text-decoration: none;
+    display: block;
+    padding: 10px 12px;
+}
+nav ul li a:hover{
+    background-color: #454545;
 }
 /*Page layout using column classes*/
 .main {
