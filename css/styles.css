@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #363434; 
+    text-align: center;
+    color: #efecec;
+    font: normal 16px Arial, Helvetica, sans-serif; 
+}
+/*Navigation.  horizontal list of links*/
+nav {
+    border-top: 1px solid #efecec;
+    border-bottom: 1px solid #efecec;
+    text-align: center;
+    background-color: #5C5757;
+}
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    display: inline-block;
+}
+nav ul li{
+    float: left;
+}
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10px 12px;
+}
+.sticky{
+      position: fixed;
+  top: 0;
+  width: 100%;
+}
+/*Link colour setting*/
+a {
+    color: #62929a;
+}
+a:hover{
+    color: #efecec;
+}
+.cover {
+    width: 100%;
+    height: 150px;
+    background-image: url("../img/circuit-board.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}​
+.wrapper{
+    line-height: 1.5;
+}
+
+/*Mobile up responsive design*/
+[class*="wrapper"] {
+    width: 100%;
+    padding: 15px;
+}
+@media only screen and (min-width: 600px){
+    .wrapper{
+        float: left;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
