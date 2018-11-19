@@ -1,41 +1,70 @@
-<!--
-    TODO:
-    [] add a header w/ image and what not make it cool lookin'
-    [] add decent content to footer
-    [] add content full stop
-    [] write and link pages for nav bar
-    [] update comments to reflect what actaully is happening
-    [] double check desgin for tablet and mobile
--->
-
-<!DOCTYPE html>
-<html  lang="en">
+<!Doctype html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Portfolio for Lachlann Whitehill">
-    <meta name="author" content="Lachlann Whitehill">
-    <meta name="keyword" content="Protfolio, Student, Lachlann Whitehill">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lachlann's Portfolio Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
-	<header>
-        <h1>Lachlann Whitehill's Software Developer Portfolio</h1>
+    <!-- start of row:header image-->
+    <header>
+        <h1>Lachlann</h1>
     </header>
+    <!-- start of row: the navigation -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects/projects.html">Projects</a></li>
-            <li><a href="contact/contact.html">Contact</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
         </ul>
     </nav>
-    <div id="wrapper">
+    <!-- start of row: about me-->
+    <div class="row">
+        <div class="col-container">
+            <div class="col-1">
+                <div class="about">
+                    <p>Hello!  I'm a passionate software developer
+                    currently studying my Ba at the University of New England.<br>
+                    <br>
+                    <br>
+                    I strive for excellence in my work, with a focus on clean,
+                    reusable and maintainable code.
+                    </p>
+                </div>
+                <div class="col-2">
+                    <img src="img/me.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start of row: projects-->
+    <div class="row green">
+        <div class="col-container">
+            <h2>Projects</h2>
+            <!--project 1-->
+            <div class="project">
+                <h3>Breakout</h3>
+            </div>
+            <!--project 2-->
+            <div class="project">
+                <h3>Search</h3>
+            </div>
+            <!--project 3-->
+            <div class="project">
+                <h3>SimpleEditor</h3>
+            </div>
+        </div>
+    </div>
+    <!-- start of row: contact-->
+    <div class="row white">
+        <div class="col-container">
+            <div class="contact">
+                <h2>Contact</h2>
 
+            </div>
+        </div>
     </div>
     <footer>
-        <p>Put actual text here</p>
+        copyright Lachlann Whitehill 2018
     </footer>
 </body>
-</html>
