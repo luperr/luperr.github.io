@@ -109,3 +109,7 @@ footer{
 .contact{
     color: #5C5757;
 }
+#social{
+    padding-left: 64px;
+    margin: auto;
+}
